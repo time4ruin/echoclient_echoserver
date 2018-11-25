@@ -75,7 +75,7 @@ int main(int argc, char **argv)
             bzero(buf, BUFSIZE);
             n = read(sockfd, buf, BUFSIZE); //blocking mode
             printf("\n----------------Message from server----------------\n%s\n", buf);
-            printf("Your message: ");
+            printf("Your message('q' to quit): ");
         }
     }
     else
