@@ -83,7 +83,6 @@ int main(int argc, char **argv)
         while (1)
         {
             fgets(buf, sizeof(buf), stdin);
-            printf("%d", strlen(buf));
             if (buf[0] == 'q'){
                 n = write(sockfd, buf, strlen(buf));
                 close(sockfd);

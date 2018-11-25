@@ -57,7 +57,7 @@ int main(int argc, char **argv)
     else if (argc == 3 && argv[2][1] == 'b')
     {
         b_option = 1;
-        printf("-b option detected\n");
+        printf("-b option enabled\n");
     }
     portno = atoi(argv[1]);
 
@@ -127,7 +127,7 @@ void *threadfunc(void *arg)
             printf("q signal received\n");
             break;
         }
-        printf("-------------Received from %s (%s)-------------\n", hostp->h_name, hostaddrp);
+        printf("---------Received from %s (%s)---------\n", hostp->h_name, hostaddrp);
         printf("%s", buf);
         if (b_option == 1)
         { //to all client
